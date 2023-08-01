@@ -21,3 +21,11 @@ console.log(`Quaid-e-Azam once said, “There are two powers in the world; one i
 let famous_person = "Quaid-e-Azam";
 let compose = famous_person.concat(" once said, “There are two powers in the world; one is the sword and the other is the pen.”");
 console.log(compose);
+//Stripping Names: Store a person’s name, 
+//and include some whitespace characters at the beginning and end of the name. 
+//Make sure you use each character combination, "\t" and "\n", at least once. 
+//Print the name once, so the whitespace around the name is displayed. 
+//Then print the name after striping the white spaces.
+let Person_name3 = ' S H A H Z A D ';
+console.log(Person_name3);
+console.log(Person_name3.trim());

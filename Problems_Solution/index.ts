@@ -36,3 +36,7 @@ console.log(compose);
 //Make sure you use each character combination, "\t" and "\n", at least once. 
 //Print the name once, so the whitespace around the name is displayed. 
 //Then print the name after striping the white spaces.
+
+let Person_name3 =  ' S H A H Z A D ';
+console.log(Person_name3);
+console.log(Person_name3.trim());
