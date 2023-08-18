@@ -30,9 +30,33 @@ console.log("Number of Weaks",Weaks,"And Days",day);
 }
 convert_weaks_and_days(29);
 
+// Write a program that calculates the discount for a product based on its price. 
+//If the price is above $100, apply a 10% discount; otherwise, apply a 5% discount.
 
+var price = 150;
 
+if (price >= 100){
+    var  DPrice = (price/100)*90;
+    console.log(DPrice);
+}
+else{
+    DPrice = (price/100)*95;
+    console.log(DPrice);
+}
 
+// Create a program that determines the category of a user-provided age. 
+// If the age is between 0 and 12, print "Child." 
+// If it's between 13 and 19, print "Teenager." Otherwise, print "Adult.
 
+var Age = 16;
 
+if (Age<=12){
+    console.log("You are Child");
+}
+else if(Age>=13 && Age<=19){
+    console.log("You are Teenager");
+}
+else{
+    console.log("You are Adult");
+}
 
