@@ -36,7 +36,7 @@ else {
 // Create a program that determines the category of a user-provided age. 
 // If the age is between 0 and 12, print "Child." 
 // If it's between 13 and 19, print "Teenager." Otherwise, print "Adult.
-var Age = 20;
+var Age = 16;
 if (Age <= 12) {
     console.log("You are Child");
 }
@@ -45,4 +45,31 @@ else if (Age >= 13 && Age <= 19) {
 }
 else {
     console.log("You are Adult");
+}
+// Develop a program that determines the day of the week. 
+// Ask the user for a number (1-7) and use nested if statements to print the corresponding day's name.
+var number = 7;
+if (number == 1) {
+    console.log("Today is Sunday");
+}
+else if (number == 2) {
+    console.log("Today is Monday");
+}
+else if (number == 3) {
+    console.log("Today is Tusday");
+}
+else if (number == 4) {
+    console.log("Today is Wensday");
+}
+else if (number == 5) {
+    console.log("Today is Thursday");
+}
+else if (number == 6) {
+    console.log("Today is Friday");
+}
+else if (number == 7) {
+    console.log("Today is Saturday");
+}
+else {
+    console.log("You put wrong number becuse a week have 7 days");
 }
