@@ -64,7 +64,8 @@ else{
 // Ask the user for a number (1-7) and use nested if statements to print the corresponding day's name.
 
 
-var number = 7;
+var number = 9;
+
 if(number == 1){
     console.log ("Today is Sunday");
 }
@@ -89,3 +90,56 @@ else if (number == 7){
 else{
     console.log("You put wrong number becuse a week have 7 days");
 }
+
+// -Write a program that takes the number of units consumed by a user 
+// if it is greater than 100 then add 10% tax if greater than 200 then add 15% of tax so on up to 
+// if greater than 500 then add 25% of tax
+// Where the tax amount will be calculated by the amount of bill.
+
+
+var consumed_units_user = 100;
+var per_unit_price = 5;
+var Total_Unit_Amount = consumed_units_user*per_unit_price;
+var Tax_Add_Bill;
+if (consumed_units_user < 100){
+    console.log("Your Bill Amount",Total_Unit_Amount);
+}
+else if (consumed_units_user > 100 && consumed_units_user<= 200){
+     Tax_Add_Bill = (Total_Unit_Amount/100)*110;
+     console.log("Your Bill Amount with 10% Tax",Tax_Add_Bill);
+}
+else if (consumed_units_user >200 && consumed_units_user<=500){
+    Tax_Add_Bill = (Total_Unit_Amount/100)*115;
+    console.log("Your Bill Amount with 15% Tax",Tax_Add_Bill);
+}
+else{
+    Tax_Add_Bill = (Total_Unit_Amount/100)*125;
+    console.log("Your Bill Amount with 25% Tax",Tax_Add_Bill);
+}
+
+// Write a program that checks if the given year is leap year or not.
+
+var year = 2027;
+
+if (year%4 == 0){
+    console.log("This year is Leap Year");
+}
+else{
+    console.log("This year is not Leap Year");
+}
+
+// Write a program that checks if the given number is  divisible 
+// by 3 or 5 or both or not divisible by anyone show output accordingly.
+
+var given_number = 9;
+
+if (given_number%3 == 0 || given_number%5 == 0){
+    console.log("This number is  divisible by 3 or 5");
+}
+else{
+    console.log("This number is Not divisible by 3 or 5");
+}
+
+// - Write a program that takes temperature and check it. 
+// If it is cold then suggest the user to wear warm clothes and so on according to the weather.
+
