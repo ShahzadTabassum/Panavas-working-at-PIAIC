@@ -33,3 +33,37 @@ function quantities(Add_quantity) {
 }
 var update_Qty = quantities(removed_items);
 console.log(update_Qty);
+// Write a program that uses a while loop to print the first 25 integers.
+var number = 0;
+while (number < 25) {
+    number++;
+    console.log(number);
+}
+// Write a program that uses a while loop to print the first 10 even numbers.
+console.log("Print the first 10 even numbers");
+var first_number = 0;
+while (first_number <= 10) {
+    first_number++;
+    if (first_number % 2 == 0) {
+        console.log(first_number);
+    }
+}
+// Create a function that takes a positive integer as parameter and uses a 
+// while loop to calculate and return the factorial of that number.
+console.log("The factorial of that number");
+function factorial(number) {
+    var integer = [];
+    while (number > 0) {
+        integer.push(number);
+        number--;
+    }
+    var product = 1;
+    for (var _i = 0, integer_1 = integer; _i < integer_1.length; _i++) {
+        var element = integer_1[_i];
+        product *= element;
+    }
+    return product;
+    // return integer.reduce((accumulator, currentValue) => accumulator * currentValue, 1);
+}
+var result = factorial(5);
+console.log(result);

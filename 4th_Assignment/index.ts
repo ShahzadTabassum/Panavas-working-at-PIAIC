@@ -46,3 +46,47 @@ var update_Qty:string[] = quantities(removed_items);
 console.log(update_Qty);
 
 // Write a program that uses a while loop to print the first 25 integers.
+
+let number = 0;
+
+while(number<25){
+    number++
+    console.log(number);
+}
+
+// Write a program that uses a while loop to print the first 10 even numbers.
+console.log("Print the first 10 even numbers");
+let first_number = 0;
+
+while(first_number<=10){
+    first_number++;
+    if(first_number % 2 == 0){
+        console.log(first_number);
+    }
+}
+
+// Create a function that takes a positive integer as parameter and uses a 
+// while loop to calculate and return the factorial of that number.
+console.log("The factorial of that number");
+function factorial(number:number):number{
+    var integer:number[] = [];
+    while(number>0){
+        integer.push(number);
+        number--;
+    }
+   
+    let product = 1;
+    for (const element of integer) {
+        product *= element;
+    }
+    return product;
+    // return integer.reduce((accumulator, currentValue) => accumulator * currentValue, 1);
+}
+
+var result = factorial(5);
+console.log(result);
+
+// - Write a program having an array of numbers if the number is negative 
+// it should remove the negative number from the array.
+
+
