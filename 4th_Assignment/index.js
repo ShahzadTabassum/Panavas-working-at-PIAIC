@@ -91,3 +91,21 @@ function Sum_of_Array(Take_array) {
 }
 var Total_sum = Sum_of_Array([1, 2, 3, 4, 5]);
 console.log("Total sum of array", Total_sum);
+// Convert each temperature to Fahrenheit using the formula F = (C * 9/5) + 32 and store the
+// converted temperatures in an array. 
+// Use a while loop to perform the conversion for each temperature.
+function convert_CtoF(temp) {
+    var i = 0;
+    var F = 0;
+    var Fahrenheit = [];
+    while (i < temp.length) {
+        F = (temp[i] * 9 / 5) + 32;
+        Fahrenheit.push(F);
+        i++;
+    }
+    return Fahrenheit;
+}
+var centi_temp = [20, 30, 40, 50, 5];
+console.log("Temprature in C", centi_temp);
+var Temp_in_Fahrenheit = convert_CtoF(centi_temp);
+console.log("Temprature in F", Temp_in_Fahrenheit);
