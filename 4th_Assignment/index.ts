@@ -68,25 +68,52 @@ while(first_number<=10){
 // Create a function that takes a positive integer as parameter and uses a 
 // while loop to calculate and return the factorial of that number.
 console.log("The factorial of that number");
-function factorial(number:number):number{
-    var integer:number[] = [];
+function calculate_factorial(number:number):number{
+                                                // var integer:number[] = [];
+    let factorial = 1;
     while(number>0){
-        integer.push(number);
+        factorial *=number;
+                                                // integer.push(number);
         number--;
     }
-   
-    let product = 1;
-    for (const element of integer) {
-        product *= element;
-    }
-    return product;
-    // return integer.reduce((accumulator, currentValue) => accumulator * currentValue, 1);
+   return factorial;
+                                                // let product = 1;
+                                                // for (const element of integer) {
+                                                //     product *= element;
+                                                   // }
+                                                 // return product;
+                                                   // return integer.reduce((accumulator, currentValue) => accumulator * currentValue, 1);
 }
 
-var result = factorial(5);
+var result = calculate_factorial(7);
 console.log(result);
 
 // - Write a program having an array of numbers if the number is negative 
 // it should remove the negative number from the array.
 
+function removeNegativeNumbers(numbers: number[]): number[] {
+    return numbers.filter(number => number >= 0);
+}
 
+const numberArray = [2, -5, 10, -3, 0, 8, -1];
+const positiveNumbers = removeNegativeNumbers(numberArray);
+
+console.log("Original Array:", numberArray);
+console.log("Array without Negative Numbers:", positiveNumbers);
+
+
+// Create a function that takes an array of numbers as parameter. 
+// Use a while loop to calculate and return the sum of all the numbers in the array.
+
+function Sum_of_Array(Take_array:number[]){
+    let index = 0;
+    let array_sum:number=0; 
+    while(index<Take_array.length){
+        array_sum += Take_array[index];
+        index++
+    }
+    return array_sum;
+}
+
+var Total_sum = Sum_of_Array([1,2,3,4,5]);
+console.log("Total sum of array",Total_sum);

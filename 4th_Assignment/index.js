@@ -51,19 +51,43 @@ while (first_number <= 10) {
 // Create a function that takes a positive integer as parameter and uses a 
 // while loop to calculate and return the factorial of that number.
 console.log("The factorial of that number");
-function factorial(number) {
-    var integer = [];
+function calculate_factorial(number) {
+    // var integer:number[] = [];
+    var factorial = 1;
     while (number > 0) {
-        integer.push(number);
+        factorial *= number;
+        // integer.push(number);
         number--;
     }
-    var product = 1;
-    for (var _i = 0, integer_1 = integer; _i < integer_1.length; _i++) {
-        var element = integer_1[_i];
-        product *= element;
-    }
-    return product;
+    return factorial;
+    // let product = 1;
+    // for (const element of integer) {
+    //     product *= element;
+    // }
+    // return product;
     // return integer.reduce((accumulator, currentValue) => accumulator * currentValue, 1);
 }
-var result = factorial(5);
+var result = calculate_factorial(7);
 console.log(result);
+// - Write a program having an array of numbers if the number is negative 
+// it should remove the negative number from the array.
+function removeNegativeNumbers(numbers) {
+    return numbers.filter(function (number) { return number >= 0; });
+}
+var numberArray = [2, -5, 10, -3, 0, 8, -1];
+var positiveNumbers = removeNegativeNumbers(numberArray);
+console.log("Original Array:", numberArray);
+console.log("Array without Negative Numbers:", positiveNumbers);
+// Create a function that takes an array of numbers as parameter. 
+// Use a while loop to calculate and return the sum of all the numbers in the array.
+function Sum_of_Array(Take_array) {
+    var index = 0;
+    var array_sum = 0;
+    while (index < Take_array.length) {
+        array_sum += Take_array[index];
+        index++;
+    }
+    return array_sum;
+}
+var Total_sum = Sum_of_Array([1, 2, 3, 4, 5]);
+console.log("Total sum of array", Total_sum);
