@@ -25,3 +25,34 @@ for (var index = 0; index < numbers.length; index++) {
     }
 }
 console.log("All old number", numbers);
+// Write a program that defines a function to calculate the area of a circle. 
+// The function should take the radius as input and return the calculated area.
+function calculate_area(radius) {
+    var area = 3.14159 * (radius * radius);
+    return area;
+}
+var area_of_circal = calculate_area(5);
+console.log(area_of_circal);
+// Develop a program that reads a list of grades and uses the splice method 
+// to remove failing grades (below 50) from the array.
+var Student_gardes = [45, 30, 40, 50, 65, 80, 89, 98];
+for (var index = 0; index < Student_gardes.length; index++) {
+    if (Student_gardes[index] < 50) {
+        Student_gardes.splice(index, 1);
+        index--;
+    }
+}
+console.log(Student_gardes);
+// Write a program that uses a function to find the largest element in an array of numbers.
+var Array_of_numbers = [56, 50, 70, 90, 100, 500, 400, 300];
+function largest_number(numbers) {
+    var largest = 0;
+    for (var index = 0; index < numbers.length; index++) {
+        if (numbers[index] > largest) {
+            largest = numbers[index];
+        }
+    }
+    return largest;
+}
+var largest_num = largest_number(Array_of_numbers);
+console.log("The Largest number of Array", largest_num);
