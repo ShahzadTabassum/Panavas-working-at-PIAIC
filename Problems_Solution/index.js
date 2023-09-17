@@ -45,3 +45,7 @@ console.log(5 + 3);
 console.log(10 - 2);
 console.log(4 * 2);
 console.log(16 / 2);
+// Favorite Number: Store your favorite number in a variable. Then, using that variable, 
+// create a message that reveals your favorite number. Print that message.
+var favorite_num = 9;
+console.log("My favorite number is ".concat(favorite_num));
