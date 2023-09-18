@@ -49,3 +49,16 @@ console.log(16 / 2);
 // create a message that reveals your favorite number. Print that message.
 var favorite_num = 9;
 console.log("My favorite number is ".concat(favorite_num));
+// This above program works as write a statment and pick favorite number from variable.
+// Names: Store the names of a few of your friends in a array called names. Print each person’s 
+// name by accessing each element in the list, one at a time.
+var store_name = ["Ali", "Imran", "Zaryab Khan", "Shami"];
+for (var index = 0; index < store_name.length; index++) {
+    console.log("Friend Name", store_name[index]);
+}
+// Greetings: Start with the array you used in Exercise 11, but instead of just printing each person’s name,
+//  print a message to them. The text of each message should be the same, 
+//  but each message should be personalized with the person’s name.
+for (var index = 0; index < store_name.length; index++) {
+    console.log("Hi ".concat(store_name[index], " Thank you for contect us. We will Responce you ASAP"));
+}
